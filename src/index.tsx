@@ -63,6 +63,9 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
         href={href}
         onClick={(e) => {
           e.preventDefault();
+          if (onClick){
+            onClick(e);
+          }
           if (href) {
             navigate(href, state, replace);
           }
