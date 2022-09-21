@@ -1,6 +1,6 @@
 {
   "name": "fast-react-router",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "peerDependencies": {
     "react": "^18.2.0",
@@ -60,5 +60,6 @@
   "bugs": {
     "url": "https://github.com/fast-router/fast-router/issues"
   },
-  "homepage": "https://github.com/fast-router/fast-router#readme"
+  "homepage": "https://github.com/fast-router/fast-router#readme",
+  "sideEffects": false
 }
