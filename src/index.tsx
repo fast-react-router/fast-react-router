@@ -63,7 +63,7 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
         href={href}
         onClick={(e) => {
           e.preventDefault();
-          if (onClick){
+          if (onClick) {
             onClick(e);
           }
           if (href) {
@@ -244,6 +244,13 @@ export function useLocationState<State, Select>(
     const state = window.history.state as State;
     return state && selectFunction(state);
   });
+}
+
+export function readLocationState<State, Select>(
+  selectFunction: (state: State) => Select
+): Select {
+  const state = window.history.state as State;
+  return state && selectFunction(state);
 }
 
 export const RouteContext = createContext<string | null>(null);
