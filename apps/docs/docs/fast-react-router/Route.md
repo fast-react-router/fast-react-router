@@ -7,12 +7,13 @@ It takes children and will display them only if the given route matches the curr
 Nested routes are also supported.
 
 Example:
+
 ```
 function MyApp() {
     return (
     <Route path="page.com/items">
         <Header />
-        
+
         <Route path="/">
             <!-- Only renders, if we are at page.com/items -->
             <ItemsList />

@@ -5,6 +5,7 @@ It only listen to the `window.location.pathname` and cause only a new render, if
 If you are navigating through the app without changing the pathname but only changing e. g. the state, search or hash no render will happen.
 
 Example:
+
 ```
 function MyApp() {
     return (
