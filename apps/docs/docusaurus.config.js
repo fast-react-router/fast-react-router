@@ -12,7 +12,6 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  // favicon: "img/favicon.ico",
 
   organizationName: "fast-router",
   projectName: "docusaurus",
@@ -28,7 +27,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/fast-router/fast-router/tree/main/docs",
         },
         blog: false,
@@ -44,10 +42,6 @@ const config = {
     ({
       navbar: {
         title: "fast-react-router",
-        // logo: {
-        //   alt: "fast-react-router logo",
-        //   src: "img/logo.svg",
-        // },
         items: [
           {
             type: "doc",
