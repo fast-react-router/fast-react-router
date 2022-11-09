@@ -14,7 +14,8 @@ const config = {
   onBrokenMarkdownLinks: "warn",
 
   organizationName: "fast-router",
-  projectName: "docusaurus",
+  projectName: "fast-router.github.io",
+  deploymentBranch: "main",
 
   i18n: {
     defaultLocale: "en",
