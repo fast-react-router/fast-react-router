@@ -10,8 +10,8 @@ const config = {
   tagline: "Fast routing libary for react",
   url: "https://fast-router.github.io",
   baseUrl: "/",
-  onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
 
   organizationName: "fast-router",
   projectName: "fast-router.github.io",
@@ -65,7 +65,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/intro",
+                to: "/docs/category/tutorial",
               },
             ],
           },

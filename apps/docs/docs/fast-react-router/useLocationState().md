@@ -1,4 +1,4 @@
-# useLocationState
+# useLocationState()
 
 The `useLocationState` hook is there for getting the current location state.
 It can be used like:

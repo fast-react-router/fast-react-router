@@ -22,7 +22,8 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "publish": "npm publish"
   },
   "eslintConfig": {
     "extends": [
