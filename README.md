@@ -7,24 +7,9 @@ Currently a lot of function from other frameworks like [react-router](https://gi
 If you are missing any features just create an issue.
 
 Pros
+
 - Fast (less renders then in other routing libaries)
 - Small bundle size
 - 100% Typescript
 
-Cons
-- A lot of missing functionalities
-- New (not realy tested, maybe there are coming breaking changes)
-- Only works with `react`. [wouter](https://github.com/molefrog/wouter) for example works with `preact` too.
-
-Todos
-- [x] navigate function
-- [x] Route component
-- [x] useParams hook
-- [x] useState hook
-- [x] usePathname hook
-- [x] nested routes
-- [x] Link component
-- [x] Switch component
-- [x] useSearch hook
-- [ ] useSearchParams hook (just getting a single parameter of the search)
-- [ ] Documentation
+Docs are now available at: https://fast-router.github.io/
