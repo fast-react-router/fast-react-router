@@ -239,7 +239,7 @@ export function useSearch(): string {
 
 export function useLocationState<State, Select>(
   selectFunction: (state: State) => Select
-): Select {
+): Select | null {
   return useSyncExternalStore(subscribe, () => {
     const state = window.history.state as State;
     return state && selectFunction(state);
@@ -248,7 +248,7 @@ export function useLocationState<State, Select>(
 
 export function readLocationState<State, Select>(
   selectFunction: (state: State) => Select
-): Select {
+): Select | null {
   const state = window.history.state as State;
   return state && selectFunction(state);
 }
