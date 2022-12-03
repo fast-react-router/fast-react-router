@@ -2,6 +2,7 @@ import React, {
   createContext,
   createElement,
   useContext,
+  useEffect,
   useSyncExternalStore,
 } from "react";
 
@@ -42,7 +43,9 @@ function Route(props: RouteProps) {
 //#region Navigate
 
 function Navigate(props: NavigateProps) {
-  navigate(props.href);
+  useEffect(() => {
+    navigate(props.href);
+  }, []);
   return null;
 }
 
